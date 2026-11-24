@@ -1,0 +1,383 @@
+/* Reset e configurações globais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFFCF7;
+  font-family: 'Inter', sans-serif;
+  color: #746A7B;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Container principal centralizado (enquadramento corrigido) */
+.page-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #FFFCF7;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 20px 80px;
+  background: #FFFDF8;
+  border-bottom: 1px solid #E9E1E9;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-title {
+  color: #6D398A;
+  font-size: 45px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+.logo-subtitle {
+  color: #746A7B;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 15.95px;
+}
+
+.nav-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #746A7B;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21.75px;
+  transition: color 0.2s;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: #6D398A;
+  font-weight: 600;
+}
+
+.btn-profile {
+  padding: 14px 22px;
+  background: transparent;
+  border-radius: 100px;
+  border: 1px solid #E9E1E9;
+  color: #6D398A;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21.75px;
+  cursor: pointer;
+}
+
+/* Conteúdo Principal */
+.main-content {
+  width: 100%;
+  padding: 40px 80px 64px 80px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.eyebrow {
+  color: #6D398A;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 15.95px;
+  letter-spacing: 0.5px;
+}
+
+.page-title {
+  color: #6D398A;
+  font-size: 40px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  line-height: 58px;
+}
+
+.page-subtitle {
+  color: #746A7B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.20px;
+}
+
+/* Barra de Busca */
+.search-bar {
+  width: 100%;
+  padding: 18px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: 1px solid #E9E1E9;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-icon {
+  flex-shrink: 0;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #34283D;
+  background: transparent;
+}
+
+.search-input::placeholder {
+  color: #746A7B;
+}
+
+/* Pílulas de Filtro */
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pill {
+  padding: 12px 18px;
+  background: #F3EDF7;
+  color: #6D398A;
+  border: none;
+  border-radius: 100px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18.85px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pill.active,
+.pill:hover {
+  background: #6D398A;
+  color: #FFFFFF;
+}
+
+/* Card em Destaque */
+.featured-card {
+  width: 100%;
+  padding: 24px;
+  background: #F3EDF7;
+  border-radius: 20px;
+  border: 1px solid #E9E1E9;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.featured-img {
+  width: 520px;
+  height: 300px;
+  border-radius: 16px;
+  object-fit: cover; /* Evita distorção quando você colocar a foto real */
+  flex-shrink: 0;
+}
+
+.featured-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.badge-tag {
+  color: #6D398A;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14.50px;
+}
+
+.featured-title {
+  color: #6D398A;
+  font-size: 32px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  line-height: 46.40px;
+}
+
+.featured-desc {
+  color: #746A7B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.20px;
+}
+
+.meta-info {
+  color: #746A7B;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17.40px;
+}
+
+.btn-primary {
+  padding: 12px 18px;
+  background: #6D398A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 100px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18.85px;
+  cursor: pointer;
+}
+
+/* Seção de Artigos */
+.section-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-title {
+  color: #6D398A;
+  font-size: 28px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  line-height: 40.60px;
+}
+
+.sort-dropdown {
+  background: none;
+  border: none;
+  color: #746A7B;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18.85px;
+  cursor: pointer;
+}
+
+/* Grade de 3 Cards */
+.cards-grid {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.article-card {
+  flex: 1;
+  min-height: 441px;
+  padding: 20px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: 1px solid #E9E1E9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.card-img {
+  width: 100%;
+  height: 190px;
+  border-radius: 16px;
+  object-fit: cover; /* Mantém a proporção da foto real */
+}
+
+.card-title {
+  color: #6D398A;
+  font-size: 24px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  line-height: 34.80px;
+}
+
+.card-meta {
+  margin-top: auto; /* Empurra o texto da fonte e o botão para alinhar na base dos 3 cards */
+}
+
+.btn-secondary {
+  padding: 12px 18px;
+  background: #F3EDF7;
+  color: #6D398A;
+  border: none;
+  border-radius: 100px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18.85px;
+  cursor: pointer;
+}
+
+/* Banner de Aviso */
+.disclaimer-box {
+  width: 100%;
+  padding: 22px;
+  background: #E9F5F7;
+  border-radius: 20px;
+  border: 1px solid #E9E1E9;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.disclaimer-title {
+  color: #6D398A;
+  font-size: 19px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  line-height: 27.55px;
+}
+
+.disclaimer-text {
+  color: #34283D;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18.85px;
+}
+
+/* Responsividade para telas menores (Tablets e Celulares) */
+@media (max-width: 1024px) {
+  .navbar, .main-content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .featured-card {
+    flex-direction: column;
+  }
+  .featured-img {
+    width: 100%;
+    height: 260px;
+  }
+  .cards-grid {
+    flex-direction: column;
+  }
+}

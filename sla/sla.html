@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Colo</title>
+  
+  <!-- Importação das fontes Fredoka e Inter do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Importação do arquivo CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Cabeçalho -->
+    <header class="navbar">
+      <div class="logo-group">
+        <span class="logo-title">colo</span>
+        <span class="logo-subtitle">Cuidado para<br/>quem cuida</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#" class="nav-item">Início</a>
+        <a href="#" class="nav-item">Comunidade</a>
+        <a href="#" class="nav-item">Grupos</a>
+        <a href="#" class="nav-item active">Conteúdos</a>
+      </nav>
+
+      <button class="btn-profile">Meu perfil</button>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+      <div class="header-text">
+        <span class="eyebrow">BIBLIOTECA COLO</span>
+        <h1 class="page-title">Mais clareza. Menos palpites.</h1>
+        <p class="page-subtitle">Informação confiável para apoiar suas escolhas, respeitando cada família e cada fase.</p>
+      </div>
+
+      <!-- Barra de Busca -->
+      <div class="search-bar">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="8.75" cy="8.75" r="5.42" stroke="#6D398A" stroke-width="1.5"/>
+          <path d="M12.92 12.92L16.67 16.67" stroke="#6D398A" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <input type="text" class="search-input" placeholder="Buscar um assunto ou uma dúvida" />
+      </div>
+
+      <!-- Filtros / Categorias -->
+      <div class="filter-pills">
+        <button class="pill active">Todos</button>
+        <button class="pill">Saúde</button>
+        <button class="pill">Desenvolvimento</button>
+        <button class="pill">Alimentação</button>
+        <button class="pill">Segurança</button>
+        <button class="pill">Bem-estar parental</button>
+      </div>
+
+      <!-- Card em Destaque -->
+      <section class="featured-card">
+        <img class="featured-img" src="https://placehold.co/520x300" alt="Sono seguro" />
+        <div class="featured-info">
+          <span class="badge-tag">✓ CONTEÚDO REVISADO &nbsp;·&nbsp; SONO E SEGURANÇA</span>
+          <h2 class="featured-title">Sono seguro: um cuidado que começa no berço</h2>
+          <p class="featured-desc">Posição de dormir, ambiente e rotina: entenda as recomendações para acolher o sono do bebê com mais segurança.</p>
+          <span class="meta-info">Baseado em orientações da SBP · 6 min de leitura</span>
+          <button class="btn-primary">Ler orientação completa &nbsp;→</button>
+        </div>
+      </section>
+
+      <!-- Cabeçalho da Seção de Artigos -->
+      <div class="section-header">
+        <h2 class="section-title">Para o seu momento</h2>
+        <button class="sort-dropdown">Ordenar: mais recentes &nbsp;⌄</button>
+      </div>
+
+      <!-- Grade de Cards -->
+      <section class="cards-grid">
+        <!-- Card 1 -->
+        <article class="article-card">
+          <img class="card-img" src="https://placehold.co/371x190" alt="Introdução alimentar" />
+          <span class="badge-tag">✓ REVISADO &nbsp;·&nbsp; ALIMENTAÇÃO</span>
+          <h3 class="card-title">Introdução alimentar sem tanta pressão</h3>
+          <span class="meta-info card-meta">Fonte-base: Ministério da Saúde · 8 min</span>
+          <button class="btn-secondary">Ler conteúdo &nbsp;→</button>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="article-card">
+          <img class="card-img" src="https://placehold.co/371x190" alt="Bem-estar parental" />
+          <span class="badge-tag">✓ REVISADO &nbsp;·&nbsp; BEM-ESTAR</span>
+          <h3 class="card-title">Quem cuida também precisa de uma pausa</h3>
+          <span class="meta-info card-meta">Fonte-base: Organização Mundial da Saúde · 5 min</span>
+          <button class="btn-secondary">Ler conteúdo &nbsp;→</button>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="article-card">
+          <img class="card-img" src="https://placehold.co/371x190" alt="Desenvolvimento infantil" />
+          <span class="badge-tag">✓ REVISADO &nbsp;·&nbsp; DESENVOLVIMENTO</span>
+          <h3 class="card-title">Cada descoberta tem o seu tempo</h3>
+          <span class="meta-info card-meta">Fonte-base: Caderneta da Criança · 7 min</span>
+          <button class="btn-secondary">Ler conteúdo &nbsp;→</button>
+        </article>
+      </section>
+
+      <!-- Banner de Aviso -->
+      <aside class="disclaimer-box">
+        <h4 class="disclaimer-title">Informação complementa. Não substitui o cuidado profissional.</h4>
+        <p class="disclaimer-text">Os conteúdos da Colo são educativos. Para orientações individuais, procure um profissional de saúde. Em uma emergência, ligue 192.</p>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
