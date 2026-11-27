@@ -35,11 +35,12 @@ A **Colo** é uma plataforma acolhedora pensada para mães, pais e cuidadores. O
 │   └── 📁 imagens/            # Fotografias e recursos visuais dos artigos
 └── 📁 MeuPerfil/
     └── 📄 Perfil.html         # Página de perfil do usuário, publicações e rede de apoio
+```
 
 👥 Equipe de Desenvolvimento
 Trabalho colaborativo realizado pelo grupo:
 
-`* **Arkângelo** ([@Arkangelo](https://github.com/ArkMaycon00))`
+* **Arkângelo** ([@Arkangelo](https://github.com/ArkMaycon00))
 
 Julia
 
