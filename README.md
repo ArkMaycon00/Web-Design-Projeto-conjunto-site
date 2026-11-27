@@ -40,16 +40,18 @@ A **Colo** é uma plataforma acolhedora pensada para mães, pais e cuidadores. O
 👥 Equipe de Desenvolvimento
 Trabalho colaborativo realizado pelo grupo:
 
-* **Arkângelo** ([@Arkangelo](https://github.com/ArkMaycon00))
+* **Arkângelo** ([@ArkMaycon00](https://github.com/ArkMaycon00))
 
-Julia
+* **Julia** ([@JuliaRafaellySdL](https://github.com/JuliaRafaellySdL)
 
-Rebeka
+* **Rebeka** ([@rebekafernandes-cyber](https://github.com/rebekafernandes-cyber)
 
-Lyonara
+* **Lyonara** ([@Lyonara](https://github.com/Lyonara)
 
-Luiz
+* **Luiz** ([@RodriguesSilver](https://github.com/RodriguesSilver)
 
-Jadson
+* **Jadson** ([@jadson231](https://github.com/jadson231)
+
+* **Arthur** ([@Arthur-Demetrio](https://github.com/Arthur-Demetrio)
 
 Projeto acadêmico desenvolvido com foco em design centrado no ser humano e acessibilidade visual — 2026.
