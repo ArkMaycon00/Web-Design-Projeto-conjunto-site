@@ -26,15 +26,25 @@ A **Colo** é uma plataforma acolhedora pensada para mães, pais e cuidadores. O
 
 ## 📂 Estrutura do Repositório
 
+## 📂 Estrutura do Repositório
+
 ```text
 📁 Web-Design-Projeto-conjunto-site-
-├── 📄 style.css               # Folha de estilos global e responsiva
-├── 🖼️ LogoHorizontal.png      # Identidade visual oficial da Colo
-├── 📁 Conteudo/
-│   ├── 📄 conteudo.html       # Página da Biblioteca Colo (artigos, fases e guias)
-│   └── 📁 imagens/            # Fotografias e recursos visuais dos artigos
-└── 📁 MeuPerfil/
-    └── 📄 Perfil.html         # Página de perfil do usuário, publicações e rede de apoio
+├── 📄 README.md                   # Documentação do projeto
+├── 📁 colo/                       # Aplicação principal da plataforma Colo
+│   ├── 📄 style.css               # Folha de estilos global e responsiva
+│   ├── 🖼️ LogoHorizontal.png      # Identidade visual oficial da Colo
+│   ├── 📁 Conteudo/
+│   │   ├── 📄 conteudo.html       # Página da Biblioteca Colo (artigos, fases e guias)
+│   │   └── 📁 imagens/
+│   │       ├── 🖼️ BebêDormindo.png
+│   │       ├── 🖼️ MãeCafé.png
+│   │       └── 🖼️ PaiComendo.png
+│   └── 📁 MeuPerfil/
+│       ├── 📄 Perfil.html         # Página de perfil do usuário e rede de apoio
+│       ├── 🖼️ Marina.png          # Avatar principal (100x100)
+│       └── 🖼️ Marina40x40.png     # Miniatura do avatar (40x40)
+└── 📁 portal_agil/                # Módulo complementar do projeto
 ```
 
 👥 Equipe de Desenvolvimento
