@@ -14,25 +14,102 @@
     />
 
     <!-- Importação do arquivo CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <div class="page-wrapper">
       <!-- Cabeçalho -->
       <header class="navbar">
         <div class="logo-group">
-          <span class="logo-title">colo</span>
+          <img
+            src="../LogoHorizontal.png"
+            alt="Logo Colo Horizontal"
+            class="logo-img"
+          />
           <span class="logo-subtitle">Cuidado para<br />quem cuida</span>
         </div>
 
         <nav class="nav-links">
-          <a href="#" class="nav-item">Início</a>
-          <a href="#" class="nav-item">Comunidade</a>
-          <a href="#" class="nav-item">Grupos</a>
-          <a href="#" class="nav-item active">Conteúdos</a>
+          <a href="#" class="nav-item">
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span>Início</span>
+          </a>
+
+          <a href="#" class="nav-item">
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+              ></path>
+            </svg>
+            <span>Comunidade</span>
+          </a>
+
+          <a href="#" class="nav-item">
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            <span>Grupos</span>
+          </a>
+
+          <a href="#" class="nav-item active">
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            <span>Conteúdos</span>
+          </a>
         </nav>
 
-        <button class="btn-profile">Meu perfil</button>
+        <a href="../MeuPerfil/Perfil.html" class="btn-profile">
+          <img
+            src="../MeuPerfil/Marina40x40.png"
+            alt="Foto de perfil"
+            class="nav-avatar"
+          />
+          <span>Meu perfil</span>
+        </a>
       </header>
 
       <!-- Conteúdo Principal -->
@@ -72,6 +149,7 @@
           </svg>
           <input
             type="text"
+            id="searchInput"
             class="search-input"
             placeholder="Buscar um assunto ou uma dúvida"
           />
@@ -79,16 +157,20 @@
 
         <!-- Filtros / Categorias -->
         <div class="filter-pills">
-          <button class="pill active">Todos</button>
-          <button class="pill">Saúde</button>
-          <button class="pill">Desenvolvimento</button>
-          <button class="pill">Alimentação</button>
-          <button class="pill">Segurança</button>
-          <button class="pill">Bem-estar parental</button>
+          <button class="pill active" data-categoria="todos">Todos</button>
+          <button class="pill" data-categoria="saude">Saúde</button>
+          <button class="pill" data-categoria="desenvolvimento">
+            Desenvolvimento
+          </button>
+          <button class="pill" data-categoria="alimentacao">Alimentação</button>
+          <button class="pill" data-categoria="seguranca">Segurança</button>
+          <button class="pill" data-categoria="bem-estar">
+            Bem-estar parental
+          </button>
         </div>
 
         <!-- Card em Destaque -->
-        <section class="featured-card">
+        <section class="featured-card" data-categoria="seguranca saude">
           <img
             class="featured-img"
             src="../Conteudo/imagens/bebêdormindo.png"
@@ -121,7 +203,7 @@
         <!-- Grade de Cards -->
         <section class="cards-grid">
           <!-- Card 1 -->
-          <article class="article-card">
+          <article class="article-card" data-categoria="alimentacao saude">
             <img
               class="card-img"
               src="../Conteudo/imagens/PaiComendo.png"
@@ -136,7 +218,7 @@
           </article>
 
           <!-- Card 2 -->
-          <article class="article-card">
+          <article class="article-card" data-categoria="bem-estar">
             <img
               class="card-img"
               src="../Conteudo/imagens/MãeCafé.png"
@@ -151,7 +233,7 @@
           </article>
 
           <!-- Card 3 -->
-          <article class="article-card">
+          <article class="article-card" data-categoria="desenvolvimento">
             <img
               class="card-img"
               src="../Conteudo/imagens/BebêDormindo.png"
@@ -168,6 +250,69 @@
           </article>
         </section>
 
+        <!-- =========================================
+             NOVA SEÇÃO 1: Navegar por Fase
+             ========================================= -->
+        <div class="section-header">
+          <h2 class="section-title">Explore por fase</h2>
+          <span class="meta-info">Conteúdos adaptados à idade do seu bebê</span>
+        </div>
+
+        <section class="phases-grid">
+          <div class="phase-card phase-card--lilac">
+            <span class="phase-icon">🤰</span>
+            <h3 class="phase-title">Gestação</h3>
+            <p class="phase-desc">Pré-natal, parto e preparação do ninho</p>
+          </div>
+
+          <div class="phase-card phase-card--peach">
+            <span class="phase-icon">👶</span>
+            <h3 class="phase-title">0 a 3 meses</h3>
+            <p class="phase-desc">Puerpério, amamentação e exterogestação</p>
+          </div>
+
+          <div class="phase-card phase-card--mint">
+            <span class="phase-icon">🥄</span>
+            <h3 class="phase-title">4 a 12 meses</h3>
+            <p class="phase-desc">Introdução alimentar, sono e engatinhar</p>
+          </div>
+
+          <div class="phase-card phase-card--gold">
+            <span class="phase-icon">🧸</span>
+            <h3 class="phase-title">1 a 3 anos</h3>
+            <p class="phase-desc">Primeiros passos, fala e autonomia</p>
+          </div>
+        </section>
+
+        <!-- =========================================
+             NOVA SEÇÃO 2: Guias Práticos e Checklists
+             ========================================= -->
+        <div class="section-header">
+          <h2 class="section-title">Guias rápidos para salvar</h2>
+        </div>
+
+        <section class="guides-grid">
+          <div class="guide-item">
+            <div class="guide-badge">CHECKLIST</div>
+            <div class="guide-text">
+              <h4>O que levar na mala da maternidade</h4>
+              <p>Lista enxuta para o bebê, para você e para o acompanhante.</p>
+            </div>
+            <span class="guide-arrow">→</span>
+          </div>
+
+          <div class="guide-item">
+            <div class="guide-badge">GUIA DE BOLSO</div>
+            <div class="guide-text">
+              <h4>Sinais de alerta: quando ir ao pronto-socorro?</h4>
+              <p>
+                Orientações claras da SBP para agir com calma em casos de febre.
+              </p>
+            </div>
+            <span class="guide-arrow">→</span>
+          </div>
+        </section>
+
         <!-- Banner de Aviso -->
         <aside class="disclaimer-box">
           <h4 class="disclaimer-title">
@@ -180,5 +325,101 @@
         </aside>
       </main>
     </div>
+
+    <script>
+      // 1. Animação de digitação na barra de busca
+      const input = document.getElementById("searchInput");
+      const frases = [
+        "Buscar um assunto ou uma dúvida",
+        "Como acalmar o sono do bebê?",
+        "Dicas para introdução alimentar...",
+        "Cuidados com a saúde mental materna",
+      ];
+
+      let fraseIndex = 0;
+      let letraIndex = 0;
+      let apagando = false;
+
+      function animarDigitacao() {
+        if (input.value !== "") {
+          setTimeout(animarDigitacao, 500);
+          return;
+        }
+
+        const fraseAtual = frases[fraseIndex];
+
+        if (!apagando) {
+          input.setAttribute(
+            "placeholder",
+            fraseAtual.substring(0, letraIndex + 1) + "|",
+          );
+          letraIndex++;
+
+          if (letraIndex === fraseAtual.length) {
+            input.setAttribute("placeholder", fraseAtual);
+            apagando = true;
+            setTimeout(animarDigitacao, 2000);
+            return;
+          }
+        } else {
+          input.setAttribute(
+            "placeholder",
+            fraseAtual.substring(0, letraIndex - 1) + "|",
+          );
+          letraIndex--;
+
+          if (letraIndex === 0) {
+            apagando = false;
+            fraseIndex = (fraseIndex + 1) % frases.length;
+          }
+        }
+
+        setTimeout(animarDigitacao, apagando ? 40 : 85);
+      }
+
+      animarDigitacao();
+
+      // 2. Filtros por categoria + busca ao vivo
+      const botoesFiltro = document.querySelectorAll(".filter-pills .pill");
+      const todosOsCards = document.querySelectorAll(
+        ".article-card, .featured-card",
+      );
+      let categoriaAtiva = "todos";
+
+      function filtrarConteudos() {
+        const termoBusca = input.value.toLowerCase().trim();
+
+        todosOsCards.forEach((card) => {
+          const categoriasDoCard = card.getAttribute("data-categoria") || "";
+          const textoDoCard = card.innerText.toLowerCase();
+
+          const bateCategoria =
+            categoriaAtiva === "todos" ||
+            categoriasDoCard.includes(categoriaAtiva);
+          const bateBusca =
+            termoBusca === "" || textoDoCard.includes(termoBusca);
+
+          if (bateCategoria && bateBusca) {
+            card.classList.remove("card-oculto");
+            card.classList.add("card-visivel");
+          } else {
+            card.classList.remove("card-visivel");
+            card.classList.add("card-oculto");
+          }
+        });
+      }
+
+      botoesFiltro.forEach((botao) => {
+        botao.addEventListener("click", () => {
+          botoesFiltro.forEach((b) => b.classList.remove("active"));
+          botao.classList.add("active");
+
+          categoriaAtiva = botao.getAttribute("data-categoria");
+          filtrarConteudos();
+        });
+      });
+
+      input.addEventListener("input", filtrarConteudos);
+    </script>
   </body>
 </html>
